@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="who-invented-rock-paper-scissors" translatesAutoresizingMaskIntoConstraints="NO" id="4XQ-XS-sgC">
+                                <rect key="frame" x="0.0" y="500" width="375" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="52q-Qt-BXJ"/>
+                                    <constraint firstAttribute="height" constant="167" id="idJ-Rf-hrI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C2-6e-fPn">
+                                <rect key="frame" x="33" y="556" width="61" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="2dX-nq-3tS"/>
+                                    <constraint firstAttribute="height" constant="57" id="Gj4-kQ-7pf"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nid-t5-rbq">
+                                <rect key="frame" x="164" y="556" width="55" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="YPC-YC-BE8"/>
+                                    <constraint firstAttribute="width" constant="55" id="qTT-b2-BqS"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P9-rQ-Vid">
+                                <rect key="frame" x="287" y="556" width="53" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="PWI-BE-g4W"/>
+                                    <constraint firstAttribute="width" constant="53" id="pme-vX-WXv"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.98039215686274506" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4XQ-XS-sgC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Ub-qg-ul6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nid-t5-rbq" secondAttribute="bottom" constant="54" id="CZd-Nf-lQg"/>
+                            <constraint firstItem="4XQ-XS-sgC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZAh-ny-SRp"/>
+                            <constraint firstItem="4XQ-XS-sgC" firstAttribute="leading" secondItem="6C2-6e-fPn" secondAttribute="trailing" constant="-94" id="ZH9-5Z-7BE"/>
+                            <constraint firstItem="4XQ-XS-sgC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a0R-7e-0oe"/>
+                            <constraint firstItem="7P9-rQ-Vid" firstAttribute="leading" secondItem="4XQ-XS-sgC" secondAttribute="trailing" constant="-88" id="e6c-l9-wci"/>
+                            <constraint firstItem="nid-t5-rbq" firstAttribute="leading" secondItem="4XQ-XS-sgC" secondAttribute="trailing" constant="-211" id="fUD-0A-f2R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7P9-rQ-Vid" secondAttribute="bottom" constant="54" id="gAH-so-fwV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6C2-6e-fPn" secondAttribute="bottom" constant="54" id="zeP-KU-TiL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.48275862068968" y="130.40000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="who-invented-rock-paper-scissors" width="750" height="350"/>
+    </resources>
+</document>
