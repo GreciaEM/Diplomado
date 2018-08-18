@@ -118,7 +118,7 @@ class ViewController: UIViewController {
     }
     
     func selectSign() -> String {
-        var selection = arc4random_uniform(3) + 1
+        let selection = arc4random_uniform(3) + 1
         if (selection == 1){
             cpuChoice.image = UIImage(named: "paper-1")
             cpuChoice.isHidden = false
